@@ -4,6 +4,7 @@
 The backend API server and ingestion pipeline built with Node.js, Express, TypeScript, and Prisma ORM. It handles automated OTP extraction, database synchronization via Excel matrices, and automated email dispatching to active users.
 
 ## Project Structure
+```
 backend/
 ├── prisma/                         # Database schema definitions and migrations
 ├── src/                            
@@ -17,6 +18,7 @@ backend/
 ├── package.json                    # Project dependencies and npm scripts
 ├── prisma.config.ts                # Prisma configuration file
 ├── tsconfig.json                   # TypeScript compiler configuration
+```
 
 ## Environment Variables (.env)
 Create a .env file inside the backend:

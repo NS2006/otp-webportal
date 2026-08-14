@@ -3,6 +3,7 @@
 ## Overview
 A full-stack system designed to capture, process, and manage incoming OTP messages (SMS and WhatsApp) from mobile devices, forward them securely, store them in a centralized relational database, and notify designated users via email.
 
+```
 otp-webportal/
 ├── docker-compose.yaml             # Main configuration file to orchestrate backend & frontend
 ├── DB Design/                      # Database architecture schematics & ERD assets
@@ -23,30 +24,22 @@ otp-webportal/
     ├── package.json                # Frontend dependencies and scripts
     ├── public/                     # Static assets
     └── src/                        # React components and service connectors
+```
 
 ## Tech Stack
-
-Backend: Node.js, Express, TypeScript, Prisma ORM, MySQL, Nodemailer
-
-Frontend: React / Vite, TypeScript
+- Backend: Node.js, Express, TypeScript, Prisma ORM, MySQL, Nodemailer
+- Frontend: React / Vite, TypeScript
 
 ## Getting Started (Local Development)
-
 #### Prerequisites
-
-Node.js (v18+)
-
-Docker & Docker Desktop (optional, for containerization)
-
-MySQL Database
+- Node.js (v18+)
+- Docker & Docker Desktop (optional, for containerization)
+- MySQL Database
 
 #### Installation & Setup
-
-Clone the repository and navigate to the project root.
-
-Set up your environment variables for both backend and frontend in their respective .env files.
-
-Install dependencies and run the services:
+- Clone the repository and navigate to the project root.
+- Set up your environment variables for both backend and frontend in their respective .env files.
+- Install dependencies and run the services:
 
 ```bash
 # Install backend dependencies

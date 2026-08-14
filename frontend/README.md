@@ -4,6 +4,7 @@
 The client-side user interface application built with React, Vite, and TypeScript. It provides a dashboard to manage users, stores, responsibilities, system settings, view paginated OTP history, and perform bulk database synchronizations via Excel matrix uploads.
 
 ## Project Structure
+```
 frontend/
 ├── public/                         # Static public assets
 ├── src/                            # Source code directory
@@ -22,6 +23,7 @@ frontend/
 ├── docker-compose.yaml             # Standalone docker compose configuration
 ├── eslint.config.js                # ESLint configuration
 ├── index.html                      # HTML root template
+```
 
 ## Environment Variables (.env)
 Create a .env file inside the frontend/ directory by copying the provided example file:
