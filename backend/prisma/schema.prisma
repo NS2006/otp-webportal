@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model User {
+  id                 Int      @id @default(autoincrement())
+  name               String   @db.VarChar(255)
+  email              String   @unique @db.VarChar(255) 
+  phoneNumber        String   @db.VarChar(255)
+  isActive           Boolean  @default(true)
+  isAdmin            Boolean  @default(false)
+  
+  userResponsibilities UserResponsibility[]
+
+  @@map("users")
+}
+
+model Store {
+  id                 Int      @id @default(autoincrement())
+  name               String   @db.VarChar(255)
+  phoneNumber        String   @db.VarChar(255)
+  
+  userResponsibilities UserResponsibility[]
+  otps                 Otp[]
+
+  @@map("stores")
+}
+
+model Sender {
+  id                 Int      @id @default(autoincrement())
+  name               String   @db.VarChar(255)
+  phoneNumber        String   @db.VarChar(255)
+  
+  otps                 Otp[]
+
+  @@map("senders")
+}
+
+model UserResponsibility {
+  id      Int @id @default(autoincrement())
+  userId  Int
+  storeId Int
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, storeId]) 
+  
+  @@map("user_responsibilities")
+}
+
+model Otp {
+  id           Int      @id @default(autoincrement())
+  receivedDate DateTime
+  receivedVia  String   @db.VarChar(4)  // value -> WA, WA4B, or SMS
+  type         String   @db.VarChar(4)  // value -> code or link  
+  code         String   @db.VarChar(255) // value -> OTP code or OTP link
+  message      String?  @db.Text
+  storeId      Int
+  senderId     Int
+
+  store  Store  @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  sender Sender @relation(fields: [senderId], references: [id], onDelete: Cascade)
+
+  @@index([storeId, receivedDate(sort: Desc)]) 
+  @@index([receivedDate(sort: Desc)])
+  @@index([receivedVia])
+  @@index([type])
+  @@index([code])
+  @@index([senderId])
+
+  @@map("otps")
+}
+
+model SystemSetting {
+  id               String @id @default("default")
+  otpRetentionDays Int    @default(7) // Default: 7 hari
+
+  @@map("system_settings")
+}

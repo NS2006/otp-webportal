@@ -1,0 +1,41 @@
+MsUser
+- id:PK		[INT]
+- name		[VARCHAR]
+- email		[VARCHAR]
+- phoneNumber	[VARCHAR]
+- isActive		[BOOLEAN] # Default: true
+- isAdmin	[BOOLEAN] # Default: false
+
+
+MsStore
+- id:PK		[INT]
+- name		[VARCHAR]
+- phoneNumber	[VARCHAR]
+
+
+MsSender
+- id:PK		[INT]
+- name		[VARCHAR]	
+- phoneNumber	[VARCHAR]
+
+
+MsOTP
+- id:PK		[INT]
+- receivedDate 	[DATE]
+- receivedVia	[CHAR]		# value -> WA, WA4B, or SMS
+- type		[CHAR] 		# value -> code or link
+- code		[VARCHAR] 	# value -> OTP code or OTP link
+- message	[TEXT]
+- storeId:FK	[INT]
+- senderId:FK	[INT]
+
+
+UserResponsibility
+- id:PK		[INT]
+- userId:FK	[INT]
+- storeId:FK	[INT]
+
+
+SystemSetting
+- id:PK		[VARCHAR]		# Default: "default"
+- otpRetentionDays [INT]		# Default: 7

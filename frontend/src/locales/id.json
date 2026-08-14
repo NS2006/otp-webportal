@@ -1,0 +1,230 @@
+{
+  "dashboard": {
+    "welcome": "Selamat datang kembali, {{name}}!",
+    "subtitle": "Berikut adalah ringkasan akun aktif Anda, tanggung jawab store, dan log OTP.",
+    "fullName": "Nama Lengkap",
+    "emailAddress": "Alamat Email",
+    "phoneNumber": "Nomor Telepon"
+  },
+  "manageLayout": {
+    "search_user": "Cari pengguna...",
+    "search_store": "Cari store...",
+    "add_user": "Tambah User",
+    "add_store": "Tambah Store"
+  },
+  "stores": {
+    "title": "Store yang Ditugaskan",
+    "total": "Total",
+    "search": "Cari store...",
+    "empty": "Anda saat ini tidak ditugaskan ke store manapun.",
+    "notFound": "Tidak ada store yang cocok dengan \"{{query}}\".",
+    "assignedBadge": "Ditugaskan"
+  },
+  "otps": {
+    "title": "Log OTP",
+    "total": "Log",
+    "search": "Cari OTP / store...",
+    "empty": "Tidak ada log OTP yang cocok.",
+    "latest": "Terbaru",
+    "oldest": "Terlama",
+    "filter": "Filter",
+    "filterTitle": "Filter Log OTP",
+    "loading": "Memuat OTP...",
+    "refreshTitle": "Segarkan Data",
+    "sortTitle": "Ubah Urutan",
+    "filterTooltip": "Filter Data",
+    "originalMessage": "Pesan Asli",
+    "verificationCode": "Kode Verifikasi",
+    "verificationLink": "Tautan Verifikasi",
+    "openLink": "Buka Tautan",
+    "copyCode": "Salin Kode",
+    "copyLink": "Salin Tautan",
+    "copied": "Tersalin!",
+    "filterFields": {
+      "receivedVia": "Channel / Via",
+      "type": "Tipe OTP",
+      "startDate": "Dari Tanggal",
+      "endDate": "Sampai Tanggal"
+    },
+    "card": {
+      "from": "Dari",
+      "via": "Melalui"
+    },
+    "filterOptions": {
+      "code": "Kode Angka",
+      "link": "Tautan"
+    }
+  },
+  "manageUsers": {
+    "entityTitle": "User",
+    "active": "Active",
+    "inactive": "Inactive",
+    "changeRole": "Ubah Role",
+    "changeStatus": "Ubah Status",
+    "selfRoleWarning": "Anda tidak dapat merubah role akun sendiri",
+    "selfStatusWarning": "Anda tidak dapat menonaktifkan akun sendiri",
+    "selfDeleteWarning": "Tidak dapat menghapus akun sendiri",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number"
+    },
+    "columns": {
+      "name": "NAME",
+      "email": "EMAIL",
+      "role": "ROLE",
+      "status": "STATUS"
+    },
+    "actions": {
+      "viewDetail": "View Assigned Stores",
+      "detail": "Detail",
+      "delete": "Delete User",
+      "deleteLabel": "Hapus"
+    },
+    "feedback": {
+      "successTitle": "Berhasil!",
+      "errorTitle": "Gagal!",
+      "statusChanged": "Status {{name}} berhasil diubah menjadi {{status}}.",
+      "statusError": "Gagal mengubah status user.",
+      "roleChanged": "Role {{name}} berhasil diubah menjadi {{role}}.",
+      "roleError": "Gagal mengubah role user.",
+      "deleted": "User {{name}} berhasil dihapus.",
+      "deleteError": "Gagal menghapus user."
+    },
+    "modal": {
+      "deleteTitle": "Hapus User",
+      "deleteMessage": "Apakah Anda yakin ingin menghapus user \"{{name}}\"? Tindakan ini tidak dapat dibatalkan.",
+      "confirmDelete": "Ya, Hapus",
+      "cancel": "Batal"
+    }
+  },  
+  "sidebar": {
+    "adminMode": "Mode Administrator",
+    "userMode": "Mode Pengguna",
+    "dashboard": "Dashboard",
+    "otpLogs": "Log OTP",
+    "assignedStores": "Store Ditugaskan",
+    "adminPanel": "Panel Admin",
+    "manageUsers": "Kelola Pengguna",
+    "manageStores": "Kelola Store",
+    "importExcel": "Impor Excel",
+    "systemSettings": "Pengaturan Sistem",
+    "language": "Bahasa",
+    "logout": "Keluar"
+  },
+  "common": {
+    "from": "Dari",
+    "via": "Melalui",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "refresh": "Segarkan",
+    "loading": "Memuat data dashboard..."
+  },
+  "assignButton": {
+    "assignStores": "Atur Store",
+    "assignUsers": "Atur User",
+    "modalTitleUser": "Assign Stores ke {{name}}",
+    "modalTitleStore": "Assign Users ke {{name}}",
+    "descriptionUser": "Pilih store yang menjadi tanggung jawab user ini:",
+    "descriptionStore": "Pilih user yang bertanggung jawab atas store ini:",
+    "searchStorePlaceholder": "Cari nama store...",
+    "searchUserPlaceholder": "Cari nama user atau email...",
+    "loading": "Memuat data...",
+    "noDataMatch": "Tidak ada data yang cocok dengan \"{{query}}\"",
+    "saving": "Menyimpan...",
+    "save": "Simpan Penugasan",
+    "feedback": {
+      "errorTitle": "Error",
+      "successTitle": "Berhasil!",
+      "loadError": "Gagal memuat data penugasan.",
+      "saveSuccess": "Penugasan berhasil diperbarui.",
+      "saveError": "Gagal menyimpan penugasan."
+    }
+  },
+  "confirmationModal": {
+    "defaultTitle": "Konfirmasi",
+    "defaultConfirm": "Ya, Lanjutkan",
+    "loading": "Memproses..."
+  },
+  "manageStores": {
+    "entityTitle": "Store",
+    "form": {
+      "name": "Name",
+      "phoneNumber": "Phone Number"
+    },
+    "columns": {
+      "name": "NAME",
+      "phoneNumber": "PHONE NUMBER"
+    },
+    "actions": {
+      "viewDetail": "View Assigned Users",
+      "detail": "Detail",
+      "delete": "Delete Store",
+      "deleteLabel": "Hapus"
+    },
+    "feedback": {
+      "successTitle": "Berhasil!",
+      "errorTitle": "Gagal!",
+      "deleted": "Store {{name}} berhasil dihapus.",
+      "deleteError": "Gagal menghapus store."
+    },
+    "modal": {
+      "deleteTitle": "Hapus Store",
+      "deleteMessage": "Apakah Anda yakin ingin menghapus store \"{{name}}\"? Tindakan ini tidak dapat dibatalkan.",
+      "confirmDelete": "Ya, Hapus",
+      "cancel": "Batal"
+    }
+  },
+  "viewResponsibilitiesModal": {
+    "titleUser": "Store yang Ditugaskan ke {{name}}",
+    "titleStore": "User yang Bertanggung Jawab atas {{name}}",
+    "descUser": "Daftar lengkap store yang terhubung dengan entitas ini:",
+    "descStore": "Daftar lengkap user yang terhubung dengan entitas ini:",
+    "searchStore": "Cari nama store...",
+    "searchUser": "Cari nama user...",
+    "emptyStore": "Belum ada store yang ditugaskan.",
+    "emptyUser": "Belum ada user yang ditugaskan.",
+    "noResult": "Tidak ada hasil yang cocok dengan \"{{query}}\"."
+  },
+  "filterModal": {
+    "defaultTitle": "Filter Data",
+    "allPrefix": "Semua",
+    "reset": "Reset Filter",
+    "apply": "Terapkan"
+  },
+  "importExcel": {
+    "title": "Import Excel Database",
+    "subtitle": "Upload your master spreadsheet to sync and update the database records.",
+    "warningTitle": "Informasi Sinkronisasi",
+    "warningText": "Tindakan ini akan memperbarui data User/Store yang sudah ada dan menambahkan data baru. Penugasan (Responsibilities) untuk User dan Store yang ada di file Excel akan diganti sesuai matriks (YES/Kosong). Data lama di database yang tidak ada di Excel tidak akan terhapus.",
+    "dropzoneText": "Klik untuk pilih file atau seret file Excel ke sini",
+    "supportedFormats": "Mendukung format .xlsx, .xls, atau .csv",
+    "removeFile": "Hapus",
+    "processing": "Memproses Database...",
+    "uploadButton": "Upload & Sinkronisasi Database",
+    "feedback": {
+      "successTitle": "Sinkronisasi Berhasil!",
+      "successMessage": "Database berhasil diupdate sesuai dengan file Excel yang diunggah.",
+      "errorTitle": "Sinkronisasi Gagal!",
+      "errorMessage": "Terjadi kesalahan saat memproses file Excel."
+    }
+  },
+  "manageSettings": {
+    "title": "System Settings",
+    "subtitle": "Configure global parameters and automated jobs for the application.",
+    "sectionTitle": "Auto-Cleanup & Retention",
+    "warningTitle": "Peringatan Penghapusan Otomatis",
+    "warningText": "Sistem akan menjalankan pembersihan otomatis setiap tengah malam untuk menghapus log OTP secara permanen yang usianya melebihi batas waktu di bawah ini.",
+    "labelRetention": "OTP Retention Period (Days)",
+    "daysUnit": "Hari",
+    "recommendation": "Direkomendasikan: 7 - 14 Hari untuk menjaga performa database.",
+    "saving": "Menyimpan...",
+    "saveButton": "Simpan Pengaturan",
+    "feedback": {
+      "successTitle": "Tersimpan!",
+      "successMessage": "Pengaturan sistem berhasil diperbarui.",
+      "errorTitle": "Gagal!",
+      "errorMessage": "Gagal menyimpan pengaturan."
+    }
+  }
+}

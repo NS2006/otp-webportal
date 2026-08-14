@@ -1,0 +1,230 @@
+{
+  "dashboard": {
+    "welcome": "Welcome back, {{name}}!",
+    "subtitle": "Here is your active account overview, assigned store responsibilities, and OTP logs.",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone Number"
+  },
+  "manageLayout": {
+    "search_user": "Search users...",
+    "search_store": "Search stores...",
+    "add_user": "Add User",
+    "add_store": "Add Store"
+  },
+  "stores": {
+    "title": "Assigned Stores",
+    "total": "Total",
+    "search": "Search store...",
+    "empty": "You are currently not assigned to any stores.",
+    "notFound": "No stores match \"{{query}}\".",
+    "assignedBadge": "Assigned"
+  },
+  "otps": {
+    "title": "OTP Logs",
+    "total": "Logs",
+    "search": "Search OTP / store...",
+    "empty": "No matching OTP logs found.",
+    "latest": "Latest",
+    "oldest": "Oldest",
+    "filter": "Filter",
+    "filterTitle": "Filter OTP Logs",
+    "loading": "Loading OTPs...",
+    "refreshTitle": "Refresh Data",
+    "sortTitle": "Change Sort Order",
+    "filterTooltip": "Filter Data",
+    "originalMessage": "Original Message",
+    "verificationCode": "Verification Code",
+    "verificationLink": "Verification Link",
+    "openLink": "Open Link",
+    "copyCode": "Copy Code",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "filterFields": {
+      "receivedVia": "Channel / Via",
+      "type": "OTP Type",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "card": {
+      "from": "From",
+      "via": "Via"
+    },
+    "filterOptions": {
+      "code": "Numeric Code",
+      "link": "Link"
+    }
+  },
+  "manageUsers": {
+    "entityTitle": "User",
+    "active": "Active",
+    "inactive": "Inactive",
+    "changeRole": "Change Role",
+    "changeStatus": "Change Status",
+    "selfRoleWarning": "You cannot change your own account role",
+    "selfStatusWarning": "You cannot deactivate your own account",
+    "selfDeleteWarning": "You cannot delete your own account",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number"
+    },
+    "columns": {
+      "name": "NAME",
+      "email": "EMAIL",
+      "role": "ROLE",
+      "status": "STATUS"
+    },
+    "actions": {
+      "viewDetail": "View Assigned Stores",
+      "detail": "Detail",
+      "delete": "Delete User",
+      "deleteLabel": "Delete"
+    },
+    "feedback": {
+      "successTitle": "Success!",
+      "errorTitle": "Error!",
+      "statusChanged": "{{name}}'s status has been successfully changed to {{status}}.",
+      "statusError": "Failed to change user status.",
+      "roleChanged": "{{name}}'s role has been successfully changed to {{role}}.",
+      "roleError": "Failed to change user role.",
+      "deleted": "User {{name}} has been successfully deleted.",
+      "deleteError": "Failed to delete user."
+    },
+    "modal": {
+      "deleteTitle": "Delete User",
+      "deleteMessage": "Are you sure you want to delete user \"{{name}}\"? This action cannot be undone.",
+      "confirmDelete": "Yes, Delete",
+      "cancel": "Cancel"
+    }
+  },
+  "sidebar": {
+    "adminMode": "Administrator Mode",
+    "userMode": "User Mode",
+    "dashboard": "Dashboard",
+    "otpLogs": "OTP Logs",
+    "assignedStores": "Assigned Stores",
+    "adminPanel": "Admin Panel",
+    "manageUsers": "Manage Users",
+    "manageStores": "Manage Stores",
+    "importExcel": "Import Excel",
+    "systemSettings": "System Settings",
+    "language": "Language",
+    "logout": "Logout"
+  },
+  "common": {
+    "from": "From",
+    "via": "Via",
+    "cancel": "Cancel",
+    "save": "Save",
+    "refresh": "Refresh",
+    "loading": "Loading dashboard data..."
+  },
+  "assignButton": {
+    "assignStores": "Assign Stores",
+    "assignUsers": "Assign Users",
+    "modalTitleUser": "Assign Stores to {{name}}",
+    "modalTitleStore": "Assign Users to {{name}}",
+    "descriptionUser": "Select the stores assigned to this user:",
+    "descriptionStore": "Select the users responsible for this store:",
+    "searchStorePlaceholder": "Search store name...",
+    "searchUserPlaceholder": "Search user name or email...",
+    "loading": "Loading data...",
+    "noDataMatch": "No data matches \"{{query}}\"",
+    "saving": "Saving...",
+    "save": "Save Assignments",
+    "feedback": {
+      "errorTitle": "Error",
+      "successTitle": "Success!",
+      "loadError": "Failed to load assignment data.",
+      "saveSuccess": "Assignments successfully updated.",
+      "saveError": "Failed to save assignments."
+    }
+  },
+  "confirmationModal": {
+    "defaultTitle": "Confirmation",
+    "defaultConfirm": "Yes, Proceed",
+    "loading": "Processing..."
+  },
+  "manageStores": {
+    "entityTitle": "Store",
+    "form": {
+      "name": "Name",
+      "phoneNumber": "Phone Number"
+    },
+    "columns": {
+      "name": "NAME",
+      "phoneNumber": "PHONE NUMBER"
+    },
+    "actions": {
+      "viewDetail": "View Assigned Users",
+      "detail": "Detail",
+      "delete": "Delete Store",
+      "deleteLabel": "Delete"
+    },
+    "feedback": {
+      "successTitle": "Success!",
+      "errorTitle": "Error!",
+      "deleted": "Store {{name}} has been successfully deleted.",
+      "deleteError": "Failed to delete store."
+    },
+    "modal": {
+      "deleteTitle": "Delete Store",
+      "deleteMessage": "Are you sure you want to delete store \"{{name}}\"? This action cannot be undone.",
+      "confirmDelete": "Yes, Delete",
+      "cancel": "Cancel"
+    }
+  },
+  "viewResponsibilitiesModal": {
+    "titleUser": "Stores Assigned to {{name}}",
+    "titleStore": "Users Responsible for {{name}}",
+    "descUser": "Complete list of stores linked to this entity:",
+    "descStore": "Complete list of users linked to this entity:",
+    "searchStore": "Search store name...",
+    "searchUser": "Search user name...",
+    "emptyStore": "No stores have been assigned yet.",
+    "emptyUser": "No users have been assigned yet.",
+    "noResult": "No results match \"{{query}}\"."
+  },
+  "filterModal": {
+    "defaultTitle": "Filter Data",
+    "allPrefix": "All",
+    "reset": "Reset Filter",
+    "apply": "Apply"
+  },
+  "importExcel": {
+    "title": "Import Excel Database",
+    "subtitle": "Upload your master spreadsheet to sync and update the database records.",
+    "warningTitle": "Synchronization Information",
+    "warningText": "This action will update existing User/Store data and add new ones. Responsibilities for Users and Stores in the Excel file will be replaced according to the matrix (YES/Empty). Old data in the database not present in the Excel will not be deleted.",
+    "dropzoneText": "Click to select a file or drag & drop an Excel file here",
+    "supportedFormats": "Supports .xlsx, .xls, or .csv formats",
+    "removeFile": "Remove",
+    "processing": "Processing Database...",
+    "uploadButton": "Upload & Sync Database",
+    "feedback": {
+      "successTitle": "Synchronization Successful!",
+      "successMessage": "Database successfully updated according to the uploaded Excel file.",
+      "errorTitle": "Synchronization Failed!",
+      "errorMessage": "An error occurred while processing the Excel file."
+    }
+  },
+  "manageSettings": {
+    "title": "System Settings",
+    "subtitle": "Configure global parameters and automated jobs for the application.",
+    "sectionTitle": "Auto-Cleanup & Retention",
+    "warningTitle": "Auto-Cleanup Warning",
+    "warningText": "The system will run an automated cleanup every midnight to permanently delete OTP logs older than the time limit specified below.",
+    "labelRetention": "OTP Retention Period (Days)",
+    "daysUnit": "Days",
+    "recommendation": "Recommended: 7 - 14 Days to maintain database performance.",
+    "saving": "Saving...",
+    "saveButton": "Save Settings",
+    "feedback": {
+      "successTitle": "Saved!",
+      "successMessage": "System settings successfully updated.",
+      "errorTitle": "Failed!",
+      "errorMessage": "Failed to save settings."
+    }
+  }
+}
