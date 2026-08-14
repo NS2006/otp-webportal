@@ -41,12 +41,23 @@ otp-webportal/
 - Set up your environment variables for both backend and frontend in their respective .env files.
 - Install dependencies and run the services:
 
+- For Backend:
 ```bash
 # Install backend dependencies
 cd backend
 npm install
 
 # Run backend development server
+npm run dev
+```
+
+- For Frontend:
+```bash
+# Install frontend dependencies
+cd frontend
+npm install
+
+# Run frontend development server
 npm run dev
 ```
 
