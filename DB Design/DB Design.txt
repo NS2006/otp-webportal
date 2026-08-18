@@ -1,41 +1,41 @@
 MsUser
-- id:PK		[INT]
-- name		[VARCHAR]
-- email		[VARCHAR]
-- phoneNumber	[VARCHAR]
-- isActive		[BOOLEAN] # Default: true
-- isAdmin	[BOOLEAN] # Default: false
+- id:PK			[INT]
+- name			[VARCHAR(255)]
+- email:UNIQUE		[VARCHAR(255)]		
+- phoneNumber		[VARCHAR(255)]
+- isActive		[BOOLEAN]		# Default: true
+- isAdmin		[BOOLEAN]		# Default: false
 
 
 MsStore
-- id:PK		[INT]
-- name		[VARCHAR]
-- phoneNumber	[VARCHAR]
+- id:PK			[INT]
+- name			[VARCHAR(255)]
+- phoneNumber		[VARCHAR(255)]
 
 
 MsSender
-- id:PK		[INT]
-- name		[VARCHAR]	
-- phoneNumber	[VARCHAR]
+- id:PK			[INT]
+- name			[VARCHAR(255)]	
+- phoneNumber		[VARCHAR(255)]
 
 
 MsOTP
-- id:PK		[INT]
-- receivedDate 	[DATE]
-- receivedVia	[CHAR]		# value -> WA, WA4B, or SMS
-- type		[CHAR] 		# value -> code or link
-- code		[VARCHAR] 	# value -> OTP code or OTP link
-- message	[TEXT]
-- storeId:FK	[INT]
-- senderId:FK	[INT]
+- id:PK			[INT]
+- receivedDate 		[DATETIME]
+- receivedVia		[VARCHAR(4)]		# value -> WA, WA4B, or SMS
+- type			[VARCHAR(4)] 		# value -> code or link
+- code			[VARCHAR(255)] 		# value -> OTP code or OTP link
+- message:NULLABLE	[TEXT]
+- storeId:FK		[INT]
+- senderId:FK		[INT]
 
 
 UserResponsibility
-- id:PK		[INT]
-- userId:FK	[INT]
-- storeId:FK	[INT]
+- id:PK			[INT]
+- userId:FK:UNIQUE	[INT]
+- storeId:FK:UNIQUE	[INT]
 
 
 SystemSetting
-- id:PK		[VARCHAR]		# Default: "default"
-- otpRetentionDays [INT]		# Default: 7
+- id:PK			[VARCHAR]		# Default: "default"
+- otpRetentionDays 	[INT]			# Default: 7
