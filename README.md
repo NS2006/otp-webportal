@@ -18,6 +18,7 @@ The system bridges the gap between physical mobile devices receiving OTPs and th
                                           │  (Inbox/Email)   │                      │ (Web Portal)  │
                                           └──────────────────┘                      └───────────────┘
 ```
+- Repository [WA OTP](https://github.com/ivanndavidd/whatapp-otp)
 
 1. **Capture**: An Android device acting as the "primary device" receives an SMS or WhatsApp OTP. A separate companion app (WA OTP Forwarder) intercepts this notification.
 2. **Ingest**: The forwarder app instantly sends the notification payload via a secure POST request to the Backend's /ingest endpoint.
